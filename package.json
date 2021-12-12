@@ -5,6 +5,7 @@
     "author": "somyatiwari59",
     "bugs": "https://github.com/somyatiwari59/sterlingCombine/issues",
     "dependencies": {
+        "aws-sdk": "^2.1046.0",
         "compression": "^1.7.4",
         "express": "^4.17.1",
         "helmet": "^4.6.0"
