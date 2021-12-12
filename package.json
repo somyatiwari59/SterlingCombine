@@ -40,7 +40,7 @@
         "precommit": "npm run prettier:verify && [ $? -eq 0 ] && npm run lint",
         "prettier": "prettier --write \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
         "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,ts,yaml,yml}\"",
-        "start": "run-p start:client start:api",
+        "start": "node --openssl-legacy-provider scripts/server.js",
         "start:api": "node --openssl-legacy-provider src/server/api.js",
         "start:client": "node --openssl-legacy-provider scripts/server.js",
         "test:unit": "lwc-services test:unit",
