@@ -15,6 +15,8 @@ const DIST_DIR = './dist';
 app.use(express.static(DIST_DIR));
 
 app.use('*', (req, res) => {
+    console.log(DIST_DIR);
+    console.log(path.resolve(DIST_DIR, 'index.html'));
     res.sendFile(path.resolve(DIST_DIR, 'index.html'));
 });
 
