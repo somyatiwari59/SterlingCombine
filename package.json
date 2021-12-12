@@ -33,8 +33,8 @@
     },
     "repository": "somyatiwari59/sterlingCombine",
     "scripts": {
-        "build": "lwc-services build -m production",
-        "build:development": "lwc-services build",
+        "build": "lwc-services --openssl-legacy-provider build -m production",
+        "build:development": "lwc-services --openssl-legacy-provider build",
         "lint": "eslint ./src/**/*.js",
         "postinstall": "husky install",
         "precommit": "npm run prettier:verify && [ $? -eq 0 ] && npm run lint",
